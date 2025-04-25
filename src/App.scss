@@ -1,6 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
 #root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+	margin: 0;
+	font-family: "Manrope", sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+p,
+input,
+button {
+	font-family: "Manrope", sans-serif;
 }
