@@ -29,16 +29,23 @@
 
 		input,
 		#dateOfBirth,
-		#startDate {
+		#startDate,
+		select {
 			width: 200px;
-			height: 35px;
+			height: 40px;
 			padding: 10px;
 			box-sizing: border-box;
+			border: 1px solid grey;
+			border-radius: 5px;
 		}
 
 		#dateOfBirth,
 		#startDate {
 			padding-left: 25px;
+		}
+
+		select {
+			cursor: pointer;
 		}
 	}
 
@@ -50,6 +57,7 @@
 		max-width: 600px;
 		margin: 0 auto;
 		color: black;
+		border-radius: 5px;
 	}
 
 	.saveBtn {

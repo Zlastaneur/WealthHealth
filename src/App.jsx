@@ -11,7 +11,7 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Form />} />
-				<Route path="/" element={<Employees />} />
+				<Route path="/employees" element={<Employees />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>
