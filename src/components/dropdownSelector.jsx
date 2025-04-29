@@ -1,16 +1,8 @@
-import { useState } from "react"
-
-function DropdownSelector({ label, id, options }) {
-	const [selectedOption, setSelectedOption] = useState("")
-
-	const handleSelectionChange = (event) => {
-		setSelectedOption(event.target.value)
-	}
-
+function DropdownSelector({ label, id, options, selectedOption, onChange }) {
 	return (
 		<span>
 			<label htmlFor={id}>{label}</label>
-			<select id={id} value={selectedOption} onChange={handleSelectionChange}>
+			<select id={id} value={selectedOption} onChange={(e) => onChange(e.target.value)}>
 				<option value=""></option>
 				{options.map((option, index) => (
 					<option key={index} value={option.name}>

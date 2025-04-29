@@ -28,8 +28,7 @@
 		}
 
 		input,
-		#dateOfBirth,
-		#startDate,
+		.datePicker,
 		select {
 			width: 200px;
 			height: 40px;
@@ -39,8 +38,7 @@
 			border-radius: 5px;
 		}
 
-		#dateOfBirth,
-		#startDate {
+		.datePicker {
 			padding-left: 25px;
 		}
 
@@ -70,5 +68,10 @@
 		box-shadow: 0px 0px 8px 3px #cccccc;
 		font-size: 0.9rem;
 		font-weight: bold;
+	}
+
+	.errorMessage {
+		color: red;
+		font-size: 0.9em;
 	}
 }
