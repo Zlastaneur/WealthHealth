@@ -152,8 +152,7 @@ function Form() {
 							label="State"
 							id="state"
 							options={states}
-							selectedOption={formData.state}
-							onChange={(value) => setFormData({ ...formData, state: value })}
+							onSelect={(value) => setFormData({ ...formData, state: value })}
 						/>
 					</div>
 				</fieldset>
@@ -162,8 +161,7 @@ function Form() {
 						label="Department"
 						id="department"
 						options={departments}
-						selectedOption={formData.department}
-						onChange={(value) => setFormData({ ...formData, department: value })}
+						onSelect={(value) => setFormData({ ...formData, department: value })}
 					/>
 				</div>
 
