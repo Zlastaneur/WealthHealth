@@ -13,6 +13,9 @@ function DropdownSelector({ label, id, options, onSelect }) {
 	return (
 		<span>
 			<label htmlFor={id}>{label}</label>
+			<select id={id} value={selectedOption} onChange={() => {}} style={{ display: "none" }}>
+				<option value="">{selectedOption || "Select an option"}</option>
+			</select>
 			<div className="dropdown-container">
 				<div className={isCollapsed ? "list opened-dropdown" : "list closed-dropdown"} id={id}>
 					<button

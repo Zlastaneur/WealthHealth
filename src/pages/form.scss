@@ -52,6 +52,10 @@
 		fill: #98a177;
 	}
 
+	.react-datepicker-popper {
+		z-index: 100;
+	}
+
 	.address {
 		max-width: 600px;
 		margin: 0 auto;
