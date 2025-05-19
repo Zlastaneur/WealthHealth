@@ -5,8 +5,8 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'
 import DropdownSelector from "../components/dropdownSelector"
-//import Modal from "@stanlito/react-popup-modal"
-//import "@stanlito/react-popup-modal/dist/react-popup-modal.css"
+import Modal from "wealth-health-react-popup"
+import 'wealth-health-react-popup/dist/modal.css'
 import states from "../data/states.json"
 import departments from "../data/departments.json"
 import { useDispatch } from "react-redux"
@@ -80,11 +80,10 @@ function Form() {
 
 			<section className="form">
 				{showModal && <Modal message="Employee Created !" />}
-				{/*showModal && <div>Employee Created ! <button onClick={() => {setShowModal(false);}}>Fermer</button></div>*/}
 				<h2 className="title">Create Employee</h2>
 				<form>
 					<div className="input-wrapper">
-						<span>
+						<span className="span">
 							<label htmlFor="firstName">First Name</label>
 							<input
 								name="firstName"
@@ -94,7 +93,7 @@ function Form() {
 								onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
 							/>
 						</span>
-						<span>
+						<span className="span">
 							<label htmlFor="lastName">Last Name</label>
 							<input
 								name="lastName"
@@ -128,7 +127,7 @@ function Form() {
 					<fieldset className="address">
 						<legend>Address</legend>
 						<div className="input-wrapper">
-							<span>
+							<span className="span">
 								<label htmlFor="street">Street</label>
 								<input
 									name="street"
@@ -138,7 +137,7 @@ function Form() {
 									onChange={(e) => setFormData({ ...formData, street: e.target.value })}
 								/>
 							</span>
-							<span>
+							<span className="span">
 								<label htmlFor="city">City</label>
 								<input
 									name="city"
@@ -150,7 +149,7 @@ function Form() {
 							</span>
 						</div>
 						<div className="input-wrapper">
-							<span>
+							<span className="span">
 								<label htmlFor="zipcode">Zipcode</label>
 								<input
 									name="zipcode"
